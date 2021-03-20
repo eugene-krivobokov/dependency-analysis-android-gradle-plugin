@@ -15,14 +15,6 @@ import static com.autonomousapps.utils.DebugAware.debug
 abstract class AbstractFunctionalSpec extends Specification {
 
   private static final SUPPORTED_GRADLE_VERSIONS = [
-    GradleVersion.version('6.1.1'),
-//    GradleVersion.version('6.2.2'),
-//    GradleVersion.version('6.3'),
-//    GradleVersion.version('6.4.1'),
-//    GradleVersion.version('6.5.1'),
-//    GradleVersion.version('6.6.1'),
-//    GradleVersion.version('6.7.1'),
-    GradleVersion.version('6.8.2'),
     GradleVersion.version('7.0')
   ]
 
