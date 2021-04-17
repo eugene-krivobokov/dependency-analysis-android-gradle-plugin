@@ -30,7 +30,11 @@ abstract class AbstractFunctionalSpec extends Specification {
 
   protected static void clean(File rootDir) {
     if (!isDebug()) {
-      FileUtils.deleteDirectory(rootDir)
+      try {
+        FileUtils.deleteDirectory(rootDir)
+      } catch (FileNotFoundException e) {
+        println("FileNotFoundException: ${e.localizedMessage}")
+      }
     }
   }
 
